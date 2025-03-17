@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-queries.css">
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem">
+                <!-- Imagem colocada na Css -->
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder faze as configuração no seu ambiente.</p>
+                <form action="login.php" method="post">
+
+                    <div class="fundo-roxo">
+                        <label for="email" class="fundo-roxo"></label>
+                        <input type="email" name="email" id="email" placeholder="seu e-mail" required><br>
+                    </div>
+
+                    <div class="fundo-roxo">
+                        <label for="senha" ></label>
+                        <input type="password" name="senha" id="senha" placeholder="sua senha" required minlength="8"><br>
+                    </div>
+
+                    <button type="submit" class="button">Entrar</button><br>
+
+                    <button type="submit" class="button">Esqueci a senha</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
