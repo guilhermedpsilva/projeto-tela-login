@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints 
+Pequnas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 993px até 1200px
+Grandes telas: acima de 1200px
+*/ 
+
+@media screen and (min-width: 768px) {
+    body {
+        background: linear-gradient(to bottom, #5f2c82, #49a09d);
+        height: 100vh;
+        width: 100vw;
+    }
+
+    main {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    section#login {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+
+        display: flex;
+        background-color: white;
+        width: 800px;
+        height: 300px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
+    }
+
+    section#login h1{
+        text-align: center;
+    }
+
+    section#login p {
+        padding: 10px;
+    }
+
+    section#login > div#imagem {
+        background: #5f2c82 url(../imagem/metal.jpg) no-repeat;
+        background-size: cover;
+        background-position: left;
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background: linear-gradient(to bottom, #5f2c82, #49a09d);
+        height: 100vh;
+        width: 100vw;
+    }
+
+    main {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    section#login {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+
+        background-color: white;
+        width: 1000px;
+        height: 350px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
+    }
+
+    section > div#formulario {
+        display: inline-block;
+        align-items: center;
+        width: 500px;
+        height: 350px;
+    }
+
+    section#login h1{
+        text-align: center;
+    }
+
+    section#login > div#imagem {
+        position: absolute;
+        left: 50%;
+        background: #5f2c82 url(../imagem/metal.jpg) no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+        width: 500px;
+        height: 400px;
+    }
+}
